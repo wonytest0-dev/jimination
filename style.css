@@ -17,7 +17,7 @@ body {
     left: 0;
     width: 100%;
     background: #2a000a;
-    padding:60px 20px 40px;
+    padding:30px 20px 20px 20px;
     text-align: center;
 }
 
@@ -29,8 +29,8 @@ body {
 }
 
 .title h1 {
-    font-size: 58px;
-    letter-spacing: 6px;
+    font-size: 48px;
+    letter-spacing: 4px;
     font-weight: 400;
     text-transform: uppercase;
     color: #ffff;
@@ -38,8 +38,8 @@ body {
 
 .title p {
     color: #d4af37;
-    margin-top: 18px;
-    font-size: 17px;
+    margin-top: 12px;
+    font-size: 13px;
     letter-spacing: 3px;
     font-weight: 300;
 }
@@ -126,10 +126,10 @@ body {
 /* HAMBURGER */
 .hamburger {
     position: fixed;
-    top: 25px;
-    right: 25px;
+    top: 10%;
+    right: 20px;
     cursor: pointer;
-    z-index: 1100;
+    transform: rotateY(-50%)
 }
 
 .hamburger span {
