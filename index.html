@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIMINATION</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="title">
+            <h1>THE JIMINATION</h1>
+            <p>Global Streaming & Chart Support</p>
+        </div>
+    </header>
+
+    <!-- HAMBURGER -->
+<div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- SIDE MENU -->
+<nav class="side-menu" id="sideMenu">
+    <ul>
+        <li>
+    <a href="#">
+        <i class="fa-solid fa-bag-shopping"></i>
+    </a>
+</li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">DONATE</a></li>
+        <li><a href="#">ARTIST</a></li>
+        <li><a href="#">CHART</a></li>
+        <li><a href="#">EVENT</a></li>
+        <li><a href="#">SUPPORT</a></li>
+    </ul>
+</nav>
+
+    <!-- CONTENT -->
+    <section class="content">
+        <div class="gif-section">
+            <div class="gif-box">
+                <img src="images/gif1.gif">
+            </div>
+            <div class="gif-box">
+                <img src="images/gif2.gif">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Copyright © 2026 JIMINATION WEB</p>
+
+        <h3>JIMIN SOCIAL MEDIA</h3>
+
+        <div class="social">
+            <a href="https://www.instagram.com/j.m/" target="_blank">
+             <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://open.spotify.com/artist/1oSPZhvZMIrWW5I41kPkkY" target="_blank">
+        <i class="fab fa-spotify"></i>
+    </a>
+
+    <a href="https://www.billboard.com/artist/jimin/" target="_blank">
+        <i class="fas fa-globe"></i>
+    </a>
+</div>
+
+        <div class="footer-links">
+           <a href="#">Donate</a>
+           <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const hamburger = document.getElementById("hamburger");
+    const sideMenu = document.getElementById("sideMenu");
+    const overlay = document.getElementById("overlay");
+
+    hamburger.addEventListener("click", function() {
+        hamburger.classList.toggle("active");
+        sideMenu.classList.toggle("active");
+        overlay.classList.toggle("active");
+    });
+
+    overlay.addEventListener("click", function() {
+        hamburger.classList.remove("active");
+        sideMenu.classList.remove("active");
+        overlay.classList.remove("active");
+    });
+
+});
+</script>
+</body>
+
+
+</html>
